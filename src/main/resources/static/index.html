@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visão-otica</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<script src="js/ie-emulation-modes-warning.js"></script>
+<link rel="icon" href="imagens\Logo4.JPG">
+ <img src="imagens\Logo.JPG">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style type="text/css">
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+	margin-top: 1%;
+	font-size: 12pt;
+	position: relative;
+}
+img{
+	margin-top: 0.2%;
+	margin-left: 10%;
+	margin-right: 0.5%; 
+	width: 15%;	
+	
+}
+
+button{
+	margin: 5px;
+	font-weight: bold;
+}
+h1{
+	font-size: 22pt;
+}
+form{
+	padding: 5px;
+	margin: 8px;
+}
+label{
+	padding: 1.5px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-weight: bold;
+}
+font-size{
+	font-weight: bolder;
+}
+
+
+
+</style>
+</head>
+<body>
+<div>
+<div class="container">		
+			<h1>Cadastro de cliente:</h1>		
+<form  id="cadastroClientes" >	
+		<label for="id" class="form-label">Código do cliente:</label>
+  		<input class="form-control" type="text"   id="id" readonly="readonly" style="width: 200px; display: inline;" >
+  			
+		<label for="loja" class="form-label">Loja:</label>
+  		<input class="form-control" type="text" name="loja" id="loja"  style="width: 200px; display: inline;" required>
+						
+  		<label for="vendedor" class="form-label">Vendedor:</label>
+  		<input class="form-control" type="text" name="vendedor" id="vendedora" style="width: 200px; display: inline;" required>
+  			
+  		<label for="data_compra" class="form-label">Data da compra:</label>
+  		<input class="form-control" type="date" name="data_compra" id="data_compra" style="width: 150px; display: inline;" required><br>
+			
+		
+			<label for="nome" class="form-label">Nome :</label>
+			<input class="form-control" type="text" style="width: 400px; display: inline;" name="nome" id="nome" >
+		
+			<label for="data_nascimento" class="form-label">Data de nascimento :</label>
+			<input class="form-control" type="date" style="width: 150px; display: inline;" name="data_nascimento" id="data_nascimento" >
+		
+			<label for="filiacao" class="form-label">Filiação :</label>
+			<input class="form-control" type="text" style="width: 300px; display: inline;" name="filiacao" id="filiacao" ><br>
+			<label>Endereço :</label><br>
+			<label for="rua" class="form-label">Rua :</label>
+			<input class="form-control" type="text" style="width: 300px; display: inline;" name="rua" id="rua" required>
+
+			<label for="numero" class="form-label">Nº :</label>
+			<input class="form-control" type="text" style="width: 100px; display: inline;" name="numero" id="numero" required>			
+				
+			<label for="cep" class="form-label">Cep :</label>
+			<input class="form-control" type="text" style="width: 150px; display: inline;" name="cep" id="cep" required>
+		
+			<label for="bairro" class="form-label">Bairro :</label>
+			<input class="form-control" type="text" style="width: 300px; display: inline;" name="bairro" id="bairro" required><br>
+		
+			<label for="pont_de_referencia" class="form-label">Ponto de referencia :</label>
+			<input class="form-control" type="text" style="width: 300px; display: inline;" name="pont_de_referencia" id="ponto_de_referencia" required>
+		
+			<label for="cidade" class="form-labe">Cidade :</label>
+			<input class="form-control" type="text" style="width: 300px; display: inline;" name="cidade" id="cidade" required>
+		
+			<label for="estado" class="form-label">Estado :</label>
+			<input class="form-control" style="width: 250px; display: inline;"type="text" name="estado" id="estado" required>
+			<label>Informações de contatos :</label><br>
+			<label for="fixo" class="form-label">Telefone fixo :</label>
+			<input class="form-control" type="text" style="width: 200px; display: inline;" name="fixo" id="fixo" required>
+		
+			<label for="movel" class="form-label">Movel :</label>
+			<input class="form-control" style="width: 200px; display: inline;" type="text" name="movel" id="movel" required>
+				
+			<label for="email" class="form-label">Email :</label>
+			<input class="form-control" type="text" style="width: 500px; display: inline;" name="email" id="email" required><br>			
+		<label>Redes socias :</label><br>
+			<label for="instagram" class="form-label">Instagram :</label>
+			<input class="form-control" type="text" style="width: 500px; display: inline;" name="instagram" id="instagram" >
+		
+			<label for="facebook" class="form-label">Facebook :</label>
+			<input class="form-control" type="text" style="width: 500px; display: inline;" name="facebook" id="facebook" ><br>		
+		<label>Documentação :</label><br>
+			<label for="rg" class="form-label">RG :</label>
+			<input class="form-control" type="text" style="width: 200px; display: inline;" name="rg" id="rg" >
+		
+			<label for="orgao_expedidor" class="form-label">Orgão expedidor :</label>
+			<input class="form-control" type="text" style="width: 150px; display: inline;" name="orgao_expedidor" id="orgao_expedidor" >
+		
+			<label for="data_expedicao" class="form-label">Data de expedição :</label>
+			<input class="form-control" type="date" style="width: 150px; display: inline;" name="data_expedicao" id="data_de_expedicao">
+		
+			<label for="cpf" class="form-label">CPF :</label>
+			<input class="form-control" type="text" style="width: 200px; display: inline;" name="cpf" id="cpf" required><br>
+		
+			<label for="profissao" class="form-label">Profissão :</label>
+			<input class="form-control" type="text" style="width: 250px; display: inline;" name="profissao" id="profissao" >
+			
+			<label for="trabalha" class="form-label">Empresa onde trabalha :</label>
+			<input class="form-control" style="width: 250px; display: inline;" type="text" name="trabalha" id="trabalha">
+			
+			<label for="funcao" class="form-label">Função :</label>
+			<input class="form-control" style="width: 300px; display: inline;" type="text" name="funcao" id="funcao">
+
+		<div >
+			<label>Informações oftalmológicas do cliente :</label><br>
+				<div style="margin-right: 1px; display: inline;">
+					<label>Olho direito :</label> 
+						<label>ESF :</label> 
+					<input	class="form-control" type="text" id="olho_direito_ESF" name="ESF"
+						style="width: 70px; display: inline;"> 
+						<label>CIL :</label>
+					<input class="form-control" type="text" id="olho_direito_CIL"
+						name="CIL" style="width: 70px; display: inline;"> 
+						<label>EIXO :</label>
+					<input class="form-control" type="text" id="olho_direito_EIXO"
+						name="EIXO" style="width: 70px; display: inline;"> 
+						<label>DNP :</label>
+					<input class="form-control" type="text" id="olho_direito_DNP"
+						name="DNP" style="width: 70px; display: inline;">
+				</div>
+		
+				<div style="margin-left: -2px; display: inline;" >	
+					<label>Olho esquerdo :</label> 
+						<label>ESF :</label> 
+					<input class="form-control" type="text" id="olho_esquerdo_ESF" name="ESF"
+						style="width: 70px; display: inline;"> 
+						<label>CIL :</label>
+					<input class="form-control" type="text" id="olho_esquerdo_CIL"
+						name="CIL" style="width: 70px; display: inline;"> 
+						<label>EIXO :</label>
+					<input class="form-control" type="text" id="olho_esquerdo_EIXO"
+						name="EIXO" style="width: 70px; display: inline;"> 
+						<label>DNP :</label>
+					<input class="form-control" type="text" id="olho_esquerdo_DNP"
+						name="DNP" style="width: 70px; display: inline;">
+				</div>					
+		 </div><br>
+		 <center>
+				<button type="button" class="btn btn-primary" onclick="salvarCliente()">Salvar</button>
+				<button type="button" class="btn btn-secondary" onclick="document.getElementById('cadastroClientes').reset();">Novo</button>
+				<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalPesquiarCliente" data-bs-whatever="@mdo">Pesquisar</button>
+				<button type="button" class="btn btn-warning" onclick="botaoDeletarDaTela()">Deletar</button>
+			</center>
+</form>	
+</div>	
+		<div class="modal fade-lg" id="ModalPesquiarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pesquisar por cliente:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameBusca" class="col-form-label">Informe o nome:</label>
+            <input type="text" class="form-control" id="nameBusca">
+          </div>
+         <button type="button" class="btn btn-success" onclick="pesquisarCliente()">Buscar</button>
+        </form>
+			<div style="height: 300px; overflow: scroll;">
+				<div class="table table-responsive-lg">
+				<table class="table table-hover " id="tabelaresultados">
+						<thead class="table-dark">
+							<tr>
+								<th scope="col">ID:</th>				
+								<th scope="col">Nome:</th>					
+								<th scope="col">CPF:</th>
+								<th scope="col">Editar:</th>
+								<th scope="col">Delete:</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>				
+				</div>
+			</div>
+			</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="document.location.reload();" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+	
+	$(function()
+			{
+			    //Executa a requisição quando o campo username perder o foco
+			   $('#cpf').blur
+			   (function()
+			    {
+			        var cpf = $('#cpf').val().replace( /(^\d{3}\.\d{3}\.\d{3}\-\d{2}$)|(^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$)/, '').toString();
+
+			        if( cpf.length == 11 )
+			        {
+			            var v = [];
+
+			            //Calcula o primeiro dígito de verificação.
+			            v[0] = 1 * cpf[0] + 2 * cpf[1] + 3 * cpf[2];
+			            v[0] += 4 * cpf[3] + 5 * cpf[4] + 6 * cpf[5];
+			            v[0] += 7 * cpf[6] + 8 * cpf[7] + 9 * cpf[8];
+			            v[0] = v[0] % 11;
+			            v[0] = v[0] % 10;
+
+			            //Calcula o segundo dígito de verificação.
+			            v[1] = 1 * cpf[1] + 2 * cpf[2] + 3 * cpf[3];
+			            v[1] += 4 * cpf[4] + 5 * cpf[5] + 6 * cpf[6];
+			            v[1] += 7 * cpf[7] + 8 * cpf[8] + 9 * v[0];
+			            v[1] = v[1] % 11;
+			            v[1] = v[1] % 10;
+
+			            //Retorna Verdadeiro se os dígitos de verificação são os esperados.
+			            if ( (v[0] != cpf[9]) || (v[1] != cpf[10]) )
+			            {
+			                alert('CPF inválido: ' + cpf);
+
+			                $('#cpf').val('');
+			            	$('#cpf').focus();
+			            }
+			        }
+			        else
+			        {
+			            alert('CPF inválido: ' + cpf);
+
+			            $('#cpf').val('');
+						//$('#cpf').focus();
+			        }
+			    });
+			});
+	
+	
+function salvarCliente(){
+		
+		
+		var id = $("#id").val();
+		var loja = $("#loja").val();
+		var vendedora = $("#vendedora").val();
+		var data_compra = $("#data_compra").val();
+		var nome = $("#nome").val();
+		var data_nascimento = $("#data_nascimento").val();
+		var filiacao = $("#filiacao").val();
+		var rua = $("#rua").val();
+		var numero = $("#numero").val();
+		var cep = $("#cep").val();
+		var bairro = $("#bairro").val();
+		var ponto_de_referencia = $("#ponto_de_referencia").val();
+		var cidade = $("#cidade").val();
+		var estado = $("#estado").val();
+		var fixo = $("#fixo").val();
+		var movel = $("#movel").val();
+		var email = $("#email").val();
+		var instagram = $("#instagram").val();
+		var facebook = $("#facebook").val();
+		var rg = $("#rg").val();
+		var orgao_expedidor = $("#orgao_expedidor").val();
+		var data_de_expedicao = $("#data_de_expedicao").val();
+		var cpf = $("#cpf").val();
+		var profissao = $("#profissao").val();
+		var trabalha = $("#trabalha").val();
+		var funcao = $("#funcao").val();
+		var olho_direito_ESF = $("#olho_direito_ESF").val();
+		var olho_direito_CIL = $("#olho_direito_CIL").val();
+		var olho_direito_EIXO = $("#olho_direito_EIXO").val();
+		var olho_direito_DNP = $("#olho_direito_DNP").val();
+		var olho_esquerdo_ESF = $("#olho_esquerdo_ESF").val();
+		var olho_esquerdo_CIL = $("#olho_esquerdo_CIL").val();
+		var olho_esquerdo_EIXO = $("#olho_esquerdo_EIXO").val();
+		var olho_esquerdo_DNP = $("#olho_esquerdo_DNP").val();
+		
+		if(nome == null || nome != null && nome.trim() == '' && cpf == null || 
+			cpf == ( /(^\d{3}\.\d{3}\.\d{3}\-\d{2}$)|(^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$)/, '').toString()){
+			$("#nome").focus();
+			window.alert("Todos os campos são obrigatorios. Preencha com calma.");
+		}
+		
+		$.ajax({
+			method: "POST",
+			url: "salvar",
+			data: JSON.stringify({id : id, loja : loja, vendedora : vendedora, 
+				data_compra : data_compra, nome : nome, data_nascimento : data_nascimento, 
+				filiacao : filiacao, rua : rua, numero : numero, cep : cep, 
+				bairro : bairro, ponto_de_referencia : ponto_de_referencia, cidade : cidade, 
+				estado : estado, fixo : fixo, movel : movel, email : email, instagram : instagram, 
+				facebook : facebook, rg : rg, orgao_expedidor : orgao_expedidor, 
+				data_de_expedicao : data_de_expedicao, cpf : cpf, profissao : profissao, 
+				trabalha : trabalha, funcao : funcao, olho_direito_ESF : olho_direito_ESF, 
+				olho_direito_CIL : olho_direito_CIL, olho_direito_EIXO : olho_direito_EIXO,
+				olho_direito_DNP : olho_direito_DNP, olho_esquerdo_ESF : olho_esquerdo_ESF, 
+				olho_esquerdo_CIL : olho_esquerdo_CIL, olho_esquerdo_EIXO : olho_esquerdo_EIXO, olho_esquerdo_DNP				
+				}),
+				
+				contentType: "application/json; charset=utf-8",
+				successo: function(response){
+					$("#id").val(response.id);
+					alert('Cliente salvo com sucesso.' + response);
+				}			
+		}).fail(function(xhr, status, errorThrown){
+			alert('Erro ao salvar cliente no banco de dados: ' + xhr.responseText);
+		});
+		
+	}
+	
+
+function pesquisarCliente(){
+	var nome = $("#nameBusca").val();
+	if(nome != null && nome.trim() != ''){
+		
+		
+		$.ajax({
+			method: "GET",
+			url: "buscarPorNome",
+			data: "name=" + nome,			
+			success: function (response) {
+				$('#tabelaresultados > tboody > tr').remove();
+			
+				
+			for(var i = 0; i < response.length; i++){
+				$('#tabelaresultados > tbody').append('<tr id="'+response[i].id+'"><td>'+response[i].id+'</td><td>'+response[i].nome+'</td><td>'+response[i].cpf+'</td><td><button type="button" onclick="colocarEmEdicao('+response[i].id+')" class="btn btn-primary">Ver</button></td><td><button type="button" class="btn btn-danger" onclick="deletarCliente('+response[i].id+')">Deletar</button></td></tr>')
+			}
+				
+			}
+		}).fail(function (xhr, status,erroThrown) {
+			alert('Erro ao buscar usuario. '+ xhr.responseText);
+		});		
+	}
+}
+
+function colocarEmEdicao(id){
+	
+	$.ajax({
+		method: "GET",
+		url: "buscarClienteid",
+		data: "idcliente=" + id,			
+		success: function (response) {			
+			
+			$("#id").val(response.id);
+			$("#loja").val(response.loja);
+			$("#vendedora").val(response.vendedora);
+			$("#data_compra").val(response.data_compra);
+			$("#nome").val(response.nome);
+			$("#data_nascimento").val(response.data_nascimento);
+			$("#filiacao").val(response.filiacao);
+			$("#rua").val(response.rua);
+			$("#numero").val(response.numero);
+			$("#cep").val(response.cep);
+			$("#bairro").val(response.bairro);
+			$("#ponto_de_referencia").val(response.ponto_de_referencia);
+			$("#cidade").val(response.cidade);
+			$("#estado").val(response.estado);
+			$("#fixo").val(response.fixo);
+			$("#movel").val(response.movel);
+			$("#email").val(response.email);
+			$("#instagram").val(response.instagram);
+			$("#facebook").val(response.facebook);
+			$("#rg").val(response.rg);
+			$("#orgao_expedidor").val(response.orgao_expedidor);
+			$("#data_de_expedicao").val(response.data_de_expedicao);
+			$("#cpf").val(response.cpf);
+			$("#profissao").val(response.profissao);
+			$("#trabalha").val(response.trabalha);
+			$("#funcao").val(response.funcao);
+			$("#olho_direito_ESF").val(response.olho_direito_ESF);
+			$("#olho_direito_CIL").val(response.olho_direito_CIL);
+			$("#olho_direito_EIXO").val(response.olho_direito_EIXO);
+			$("#olho_direito_DNP").val(response.olho_direito_DNP);
+			$("#olho_esquerdo_ESF").val(response.olho_esquerdo_ESF);
+			$("#olho_esquerdo_CIL").val(response.olho_esquerdo_CIL);
+			$("#olho_esquerdo_EIXO").val(response.olho_esquerdo_EIXO);
+			$("#olho_esquerdo_DNP").val(response.olho_esquerdo_DNP);	
+			
+			$('#ModalPesquiarCliente').modal('hide');		
+			
+		}
+	}).fail(function (xhr, status,erroThrown) {
+		alert('Erro ao buscar clientepor id. '+ xhr.responseText);
+	});	
+	
+}
+
+function deletarCliente(id){
+	
+	
+	if(confirm('Deseja realmente deletar?')){
+	
+	$.ajax({
+		method: "DELETE",
+		url: "delete",
+		data: "idcliente=" + id,			
+		success: function (response) {
+			
+			$('#'+ id).remove();
+			
+			alert(response);
+			
+		}
+	}).fail(function (xhr, status,erroThrown) {
+		alert('Erro ao deletar cliente por id. '+ xhr.responseText);
+	});		
+	
+	}
+}
+
+function botaoDeletarDaTela(){
+	
+	var id = $('#id').val();
+	deletarCliente(id);
+	
+	if(id != null && id.trim() != ''){
+	
+		document.getElementById('cadastroClientes').reset();
+		
+	}
+}
+
+
+
+
+
+	</script>
+</div>
+</body>
+</html>
+
